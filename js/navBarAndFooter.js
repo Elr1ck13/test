@@ -43,13 +43,18 @@ function getPagePaths(page,element){
 function buildFooter(page){
 let iconPath = getIconPath(page,"LogoFooter.png");
 let contactoPage = getPagePaths(page,"contacto.html");
+console.log(contactoPage);
 const footer = `
   <footer class="footer-gradient py-3">
     <div class="container">
       <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
         <div class="col-md-6 mb-3 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+          <a href="${contactoPage}" class="footer-brand" aria-label="Grano & Click">
           <a href="./html/contacto.html" class="footer-brand" aria-label="Grano & Click">
+          <a href="./html/contacto.html" class="footer-brand" aria-label="Grano & Click">
+                    <a href="https://elr1ck13.github.io/test/html/contacto.html" class="footer-brand" aria-label="Grano & Click">
 
+      
             <img src="${iconPath}" alt="LogoFooter" height="35">
 
           </a>
@@ -74,11 +79,13 @@ let indexPage = getPagePaths(page,"index.html");
 let usPage = getPagePaths(page,"sobreNosotros.html");
 let contactoPage = getPagePaths(page,"contacto.html");
 let productPage = getPagePaths(page,"productos.html")
-
+console.log(indexPage);
 const navBar = `
   <nav class="navbar navbar-dark navbar-expand-lg mt-2">
           <div class="container" id="navBar">
-            <a class="navbar-brand" href="./index.html"> 
+          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="./index.html">  
+          <a class="navbar-brand" href="${indexPage}"> 
               <img src="${iconPath}" alt="Logo" height="35" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
